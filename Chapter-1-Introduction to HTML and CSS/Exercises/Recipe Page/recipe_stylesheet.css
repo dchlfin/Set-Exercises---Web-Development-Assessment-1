@@ -1,0 +1,139 @@
+/*centers the content within a block*/
+#container 
+	{
+	margin-left:auto; 
+	margin-right:auto;
+	width:80%;
+	}
+/*centers header*/
+#h3 
+	{
+	text-align: center;
+	}
+/*colors text*/ 
+.note 
+	{
+	color:#826849;
+	}	
+/*creates a space around the button*/
+.button2_position
+	{
+	margin-left:10px;
+	}
+/*centers buttons*/
+.center 
+	{
+	padding: 5px 0;
+	border: 0px #ece7de;
+	text-align: center;
+	}
+/*sets a fixed maximum and minimum number of content*/
+#wrapper 
+	{
+	max-width: 1000px;
+	max-height: 436px;
+	margin: 0 auto;
+	}
+/*ensures content is fully seen by adjusting to the browser's size*/
+#wrapper img
+	{
+	width: 100%;
+	height: 100%
+	}
+body 
+	{
+	background-color: #ece7de;
+	color: #271c0f;
+	font-family: Arial, sans-serif;
+	line-height:150%;
+	}
+h1 
+	{
+	border: 1px solid #271c0f;
+	border-radius: 50px;
+	background-color: #271c0f;
+	color: #e3d3bc;
+	font-family: Georgia, serif;
+	text-align: center;
+	padding-left: 5px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	}
+h2 
+	{
+	border: 1px solid #e3d3bc;
+	border-radius: 50px;
+	background-color: #e3d3bc;
+	color: #271c0f;
+	font-family: Tahoma, sans-serif;
+	text-align: center;
+	padding-left: 5px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	max-width: 1000px;
+		margin: 0 auto;
+	}
+h3 
+	{
+	font-family: Tahoma, sans-serif;
+	line-height: 200%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	}
+ul 
+	{
+	line-height: 200%;
+	}
+ul li 
+	{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	}
+ol li 
+	{
+	border: 1.5px dashed #826849;
+	border-radius: 20px;
+	background-color: #ebe0d1;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-size: 14px;
+	text-align: center-left;
+	margin-right:30px;
+	}
+a:link 
+	{
+	text-decoration: none;
+	text-align: center;
+	}
+a:link, a:visited 
+	{
+	border: 1.5px solid #271c0f;
+	border-radius: 50px;
+	background-color: #e3d3bc;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #271c0f;
+	padding: 10px 25px;
+	display: inline-block;
+	position: static;
+	}
+a:hover, a:active 
+	{
+	background-color: #dbc9af;
+	}
+p 
+	{
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: #271c0f;
+	max-width: 1000px;
+	margin: 0 auto;
+	}
+	
+	
+		
+		
