@@ -1,45 +1,53 @@
-/*centers the content within a block*/
+/*centers the content and spans it to 80% of its container*/
 #container 
 	{
 	margin-left:auto; 
 	margin-right:auto;
 	width:80%;
 	}
+
 /*centers header*/
 #h3 
 	{
 	text-align: center;
 	}
-/*colors text*/ 
+
+/*styles the <p> element with a custom color*/ 
 .note 
 	{
 	color:#826849;
 	}	
-/*creates a space around the button*/
-.button2_position
+
+/*adds a space on the outer left-hand side of the element*/
+.button2_position 
 	{
 	margin-left:10px;
 	}
-/*centers buttons*/
+
+/*centers content within a container with a specified top and bottom distance around its border*/
 .center 
 	{
 	padding: 5px 0;
-	border: 0px #ece7de;
-	text-align: center;
+	border: 0px;
+	text-align: center; 
 	}
-/*sets a fixed maximum and minimum number of content*/
+
+/*centers the wrapper horizontally and limits its maximum size*/
 #wrapper 
 	{
-	max-width: 1000px;
+	max-width: 1000px; 
 	max-height: 436px;
 	margin: 0 auto;
 	}
-/*ensures content is fully seen by adjusting to the browser's size*/
-#wrapper img
+
+/*maximizes the image to its maximum size*/ 
+#wrapper img 
 	{
 	width: 100%;
 	height: 100%
 	}
+
+/*specifies the background color, font, and height of a line box*/ 
 body 
 	{
 	background-color: #ece7de;
@@ -47,10 +55,12 @@ body
 	font-family: Arial, sans-serif;
 	line-height:150%;
 	}
+
+/*styles all <h1> elements as rounded headings with custom font and size, background and text color.*/
 h1 
 	{
-	border: 1px solid #271c0f;
-	border-radius: 50px;
+	border: 1px solid #271c0f; 
+	border-radius: 50px; 
 	background-color: #271c0f;
 	color: #e3d3bc;
 	font-family: Georgia, serif;
@@ -59,6 +69,8 @@ h1
 	padding-bottom: 15px;
 	padding-top: 15px;
 	}
+
+/*styles all <h2> elements as rounded headings with custom font and size, background and text color*/
 h2 
 	{
 	border: 1px solid #e3d3bc;
@@ -71,8 +83,10 @@ h2
 	padding-bottom: 15px;
 	padding-top: 15px;
 	max-width: 1000px;
-		margin: 0 auto;
+	margin: 0 auto;
 	}
+
+/*styles all <h3> elements as centered with custom font and line height, occupying 80% of the container's width*/
 h3 
 	{
 	font-family: Tahoma, sans-serif;
@@ -81,16 +95,22 @@ h3
 	margin-right: auto;
 	width: 80%;
 	}
+
+/*increases the distance between points in the unordered list with 'line-height'*/
 ul 
 	{
 	line-height: 200%;
 	}
+
+/*centers and occupies 80% of the container's width */
 ul li 
 	{
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
 	}
+
+/*styles all <li> elements of the <ol> container as a rounded text box*/
 ol li 
 	{
 	border: 1.5px dashed #826849;
@@ -101,16 +121,15 @@ ol li
 	padding-bottom: 15px;
 	padding-top: 15px;
 	font-size: 14px;
-	text-align: center-left;
 	margin-right:30px;
 	}
-a:link 
-	{
-	text-decoration: none;
-	text-align: center;
-	}
+
+/*styles all <a> elements as rounded buttons with custom font, background, and text color*/
 a:link, a:visited 
 	{
+	/*specifies the decoration added to the link text*/
+	text-decoration: none; 
+	text-align: center;
 	border: 1.5px solid #271c0f;
 	border-radius: 50px;
 	background-color: #e3d3bc;
@@ -118,13 +137,17 @@ a:link, a:visited
 	font-size: 16px;
 	color: #271c0f;
 	padding: 10px 25px;
-	display: inline-block;
-	position: static;
+	display: inline-block; 
+	position: static; 
 	}
+
+/*changes the background of all <a> elements when cursor hovers on the button*/ 
 a:hover, a:active 
 	{
-	background-color: #dbc9af;
+	background-color: #dbc9af; 
 	}
+
+/*styles all <p> elements with a custom font, background, and text color, occupying within 1000px of the container*/
 p 
 	{
 	font-family: Arial, sans-serif;
@@ -133,7 +156,3 @@ p
 	max-width: 1000px;
 	margin: 0 auto;
 	}
-	
-	
-		
-		
