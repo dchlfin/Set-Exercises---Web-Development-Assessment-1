@@ -1,7 +1,10 @@
+/*ensures that elements with specified borders, paddings, and widths stay within the width of the container*/
 * 	
 	{
 	box-sizing: border-box;
 	}
+
+/*centers the wrapper horizontally and limits its maximum size*/
 #wrapper
 	{
 	width: 60%;
@@ -9,6 +12,8 @@
 	margin-right: auto;
 	max-width: 750px;
 	}
+
+/*specifies the main background color and the color, font, and size of the text*/ 
 body 
 	{
 	background-color: #0e0e0e;
@@ -16,50 +21,64 @@ body
 	font-family: "Crimson Pro", serif;
 	font-size: 16px;
 	}
+
+/*specifies the distance between each text line*/ 
 p
 	{
 	line-height: 1.4em;
 	}
+
+/*aligns lines of text from the left to the right margin*/ 
 div
 	{
 	text-align: justify;
-	text-justify: interword;
 	}
+
+/*adds space on the top and bottom side of the element and aligns it to the center*/
 .header 
 	{
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
 	}
-.header h1 
+
+/*specifies the color and text size of the <h1> element within the header container*/ 
+.header h1
 	{
 	font-size: 55px;
 	color: #821424;
 	}
 
+/*specifies the text color within the header container*/
 .header p
 	{
 	color: #821424;
 	}
+
+/*specifies the margin, overall padding, font and text size of all <h1> elements*/
 h1 
 	{
-	margin: 0; padding: 10px;
+	margin: 0; 
+	padding: 10px;
 	font-family: "Oswald", sans-serif;
 	font-size: 30px;
 	}
+
+/*styles all <h2> elements as centered, rounded boxes with a custom font and background*/
 h2 
 	{
 	display: block;
 	border: 1.5px solid #821424;
 	border-radius: 50px;
 	background-color:#390007;
-	/*color: #f0f4f5;*/
 	color: #b3e3e1;
 	text-align: center;
 	font-family: "Libre Baskerville", serif;
 	font-weight: 700;
 	font-size: 20px;
 	}
+
+/*styles all <h3> elements with a custom font and color, centered*/ 
 h3
 	{
 	display: block;
@@ -71,6 +90,8 @@ h3
 	margin-top: -1px;
 	margin-bottom: -1px;
 	}
+
+/*styles all <h4> elements with a custom font and color, centered*/ 
 h4
 	{
 	display:block;
@@ -82,25 +103,30 @@ h4
 	margin-top: -1px;
 	margin-bottom: -1px;
 	}
+
+/*ensures that the <nav> container or navigation bar sticks to the top of the webpage while scrolling down*/ 
 nav 
 	{
 	position: sticky;
 	top: 0;
 	}
+
+/*styles the <ul> inside the <nav> container with a custom background color and centered with 0 padding*/
 nav ul 
 	{
     text-align: center;
     padding: 0;
-    margin: 5;
     background-color: #0e0e0e;
 	}
 
+/*adds a left and right gap between the <li> elements of the <ul> container with specified margins*/
 nav ul li 
 	{
     display: inline-block; 
     margin: 0 10px; 
 	}
 	
+/*styles the referred links in all <li> elements as each section's heading with a custom font and size, and color*/
 nav ul li a 
 	{
     display: block;
@@ -112,24 +138,31 @@ nav ul li a
     text-decoration: none;
 	}
 
+/*spans fullwidth to 100% of the container and clears floated elements above it*/
 .fullwidth
 	{
 	width: 100%;
 	padding: 15px;
 	clear: both;
 	}
+
+/*styles column to occupy half the width of its container, allowing two columns to sit next to each other*/
 .column 
 	{
 	float: left;
 	width: 50%;
 	padding: 10px;
 	}
+
+/*clears floats after each row to start a new one cleanly*/
 .row::after 
 	{
 	content: "";
 	display: table;
 	clear: both;
 	}
+
+/*maximizes a column to 100% of the container when the user's screen is 600px or less*/ 
 @media screen and (max-width:600px) 
 	{
 		.column 
@@ -137,19 +170,27 @@ nav ul li a
 			width: 100%;
 			}
 	}
+
+/*styles the horizontal line*/
 hr
 	{
 	border-top: 2px dashed #821424;
 	}
+
+/*centers the team class*/
 .team
 	{
 	text-align: center;
 	}
+
+/*styles the <h3> element in the reviews class*/ 
 .reviews h3
 	{
 	color:#5b101b;
 	display: block;
 	}
+
+/*styles all <blockquote> elements to 50% of its width, with a gap after each quote*/
 blockquote 
 	{
 	width: 50%;
@@ -157,11 +198,15 @@ blockquote
 	margin-right: auto;
 	margin-bottom: 30px; 
 	} 
+
+/*styles the link of the button with no default decoration and centers it to its container*/
 a.button:link
 	{
 	text-decoration: none;
 	text-align: center;
 	}
+
+/*styles the button as a rounded button with a custom gradient background*/ 
 a.button:link, a.button:visited
 	{
 	border: 1.5px solid none;
@@ -176,6 +221,8 @@ a.button:link, a.button:visited
 	margin-top: 5px;
 	margin-bottom: 5px;
 	}
+
+/*changes the background when cursor hovers on the button*/ 
 a.button:hover, a.button:active
 	{
 	background-image: radial-gradient(circle, #0e0e0e, #821424, #b3e3e1);
