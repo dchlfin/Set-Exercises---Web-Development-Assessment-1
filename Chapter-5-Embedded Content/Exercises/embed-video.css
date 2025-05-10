@@ -1,0 +1,17 @@
+body
+	{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #ecd9f5;
+	}
+video 
+    {
+    border: .3em solid #000000;
+    background-color: #000000;
+    border-radius: 1em;
+    filter: drop-shadow(-3px 8px 20px #000000);
+    }
