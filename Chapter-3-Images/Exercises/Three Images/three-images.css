@@ -1,19 +1,25 @@
+/*ensures that elements with specified borders, paddings, and widths stay within the width of the container*/
 * 
 	{
 	box-sizing: border-box;
 	}
+
+/*pads content and styles background color*/
 body 
 	{
-	margin: 10;
 	padding: 70px;
-	background-color: #000;
+	background-color: #000000;
 	}
+
+/*centers the content and spans width to 80% of its container*/
 #container 
 	{
 	margin-left: auto; 
 	margin-right: auto;
 	width: 80%;
 	}
+
+/*styles column to occupy third of the width of its container, allowing three columns to sit next to each other*/
 .column 
 	{
 	background-color: #000;
@@ -21,6 +27,8 @@ body
 	width: 33.33%;
 	padding: 10px; 
 	}
+
+/*spans its width to 100%, wrapping around it within the container*/ 
 .column img
 	{
 	display: block;
@@ -29,6 +37,8 @@ body
 	width: 100%;
 	height: auto;
 	}
+
+/*styles all column <p> elements with a custom color and font size*/
 .column p 
 	{
 	color: #bdbdbd;
@@ -37,22 +47,30 @@ body
 	text-align: center;
 	padding: 16px;
 	}
+
+/*increases the font size of a selected <p> element*/
 .primary-caption 
 	{
 	font-size: 15px;
 	font-style: normal;
 	color: #fff;
 	}
+
+/*bolds and changes the color of all link elements*/
 .primary-caption link
 	{
 	font-weight: 100px;
 	color: #fff;
 	}
+
+/*styles the link with an underline*/
 a:link, a:visited 
 	{
 	color: #fff;
 	text-decoration: underline;
 	}
+
+/*maximizes a column to 100% of the container when the user's screen is 600px or less*/ 
 @media screen and (max-width:600px) 
 	{
 		.column 
@@ -60,14 +78,20 @@ a:link, a:visited
 			width: 100%;
 			}
 	}
+
+/*styles a selected image with a drop-shadow effect, specifying the x and y coordinates, blur degree, and color of the shadow*/
 #img1 
 	{
 	filter: drop-shadow(-3px 8px 20px #980e07);
 	}
+
+/*styles a selected image with a specified degree of blur on the image*/
 #img2
 	{
 	filter: blur(3px);
 	}
+
+/*styles a selected image with a specified degree of saturation on the image*/
 #img3
 	{
 	filter: saturate(100%);
