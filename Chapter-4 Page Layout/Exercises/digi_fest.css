@@ -1,0 +1,153 @@
+/*styles the web page with a custom color*/ 
+body
+       {
+       background-color: #08030f;
+       }
+
+/*centers the content horizontally with a custom background, limits its maximum size, and specifies the font and size of all <p> elements*/
+#wrapper 
+       {
+       width: 90%;
+	margin-left: auto;
+       margin-right: auto;
+       background-color:#ffffff; 
+       font-family: "Arial", sans-serif;
+       font-size: 18px;
+       }
+
+/*styles the header section with a custom font and background color*/
+header
+       { 
+       width: 100%;
+       background-color: #17072b; 
+       text-align: center;
+       padding-bottom: 2px;
+       color: #ffffff;
+       }
+
+/*styles all <h1> elements as underlined with a custom font and size*/
+h1
+       { 
+       font-family: "Tahoma", sans-serif;
+       font-weight: 700;
+       text-decoration: underline;
+       margin: 0; 
+       padding-top: 20px; 
+       font-size:40px;
+       }
+
+/*styles all <h2> elements as underlined with a custom font and size*/
+h2
+       {
+       font-family: "Tahoma", sans-serif;
+       font-weight: 700;
+       text-decoration: underline;
+       margin: 0; 
+       padding-top: 20px; 
+       }
+
+/*creates a column that horizontally spans 63% of the container*/
+main
+       { 
+       background-color: #ffffff;
+       float: left; 
+       width: 63%;
+       padding-top: 10px;
+       padding-left: 30px;
+       }
+
+/*maximizes the image width and enables other elements to sit beside it*/
+main img 
+       {
+       max-width: 100%;
+       display: inline-block;
+       }
+
+/*creates a smaller right-hand side column with a contrasting color to the main column*/
+.aside
+       { 
+       margin-left: 67%;
+       margin-top: 10px;
+       padding-right: 20px;
+       padding-bottom: 20px;
+       background-color:  #172d67;
+       color: #ffffff;
+       }
+
+/*adds a horizontal distance between the <h2> element and the container*/
+.aside h2
+       {
+       padding-left: 30px;
+       }
+
+/*adds a horizontal distance between the <ul> element and the container with a specified line height*/
+.aside ul
+       {
+       padding-left: 30px;
+       line-height: 40px;
+       }
+
+/*enables other elements to sit beside the image*/
+.aside img
+       {
+       display:inline-block;
+       }
+
+/*adds margins to the container for images*/
+.images
+       {
+       margin-left: 30px;  
+       margin-top: 66px;     
+       }
+
+/*maximizes the image width*/
+.images img
+       {
+       max-width: 100%;
+       background-size: contain;
+       }
+
+/*centers and specifies the font size of the <p> elements within the nav section*/
+nav
+       {
+       text-align: center;
+       font-size: 25px;
+       }
+
+/*removes the default formatting of all <ul> elements*/
+ul 
+       {
+       list-style-type: none;
+       }
+
+/*styles the <a> attributes of the nav link elements as plain text with custom font color */
+nav a 
+       {
+       text-decoration: none;
+       padding-right: 20px;
+       color: #FFFFFF;
+       font-weight: 200;
+       }
+
+/*enables all <li> elements in the nav section to sit beside each other with a specified padding*/
+nav li 
+       {
+       display: inline;
+       }
+
+/*styles the footer with a custom background color and padding*/
+footer 
+       { 
+       text-align: center;
+       background-color: #8c15e9; 
+       margin-top:10px;
+       color: #ffffff;
+       padding:5px 0;
+       }
+
+/*specifies no margins and line height to all <p> elements of the footer*/
+footer p     
+       {
+       margin: 0;
+       line-height: 1.4;
+       }
