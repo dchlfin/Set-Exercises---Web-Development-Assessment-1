@@ -11,6 +11,12 @@ form.addEventListener('submit', function (event) {
 let costPerL = inputCostPerL.value;
 let litres = inputNumOfLitres.value;
 
+//if the input to Cost per Litre is below or equal to 0 OR nothing at all, the website alerts the user to enter a valid input, then resets the form
+if (costPerL <= 0 || costPerL == "") {
+    alert("Invalid cost per litre. Please try again.")
+    document.getElementById("form").reset();
+}
+
 //if the input to No. of Litres is below or equal to zero, the website alerts the user to enter a valid input, then resets the form
 if (litres <= 0) {
     alert("Invalid number of litres. Please try again.")
